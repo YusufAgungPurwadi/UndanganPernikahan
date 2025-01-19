@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pria dan Wanita Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Landing Page -->
+        <div class="landing-page bg-1" id="landingPage">
+            <div class="landing-content">
+                <div class="title-wrapper fade-in">
+                    <h1 class="main-title">Pria & Wanita</h1>
+                    <h4 class="sub">Kepada Bapak/Ibu/Saudara/i,</h4>
+                    <h2 class="subtitle">The Wedding Of</h2>
+                    <div class="wedding-info">
+                        <p class="wedding-date">Minggu, 01 Januari 2025</p>
+                        <p class="wedding-time">10:00 WIB - Selesai</p>
+                        <p class="wedding-place">Gedung Pernikahan Bahagia</p>
+                    </div>
+                    
+                    <div class="button-container">
+                        <a href="#home" class="btn btn-lg mt-4" onclick="playBackgroundMusic()">Buka Undangan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Konten Setelah Landing Page dengan Background Video -->
+        <div class="main-content" id="mainContent">
+            <!-- Background Video -->
+            <div class="video-background">
+                <video autoplay muted loop id="myVideo">
+                    <source src="Assets Gambar/Video.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+
+            <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top fixed-topmynavbar">
+                <div class="container">
+                  <a class="navbar-brand" href="#">Pria & Wanita Wedding</a>
+                  <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pria & Wanita Wedding</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link" href="#info">info</a>
+                            <a class="nav-link" href="#maps">maps</a>
+                            <a class="nav-link" href="#galeri">galeri</a>
+                            <a class="nav-link" href="#RSVP">saran</a>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            
+              <section id="home" class="home">
+                <div class="content-wrapper">
+                    <div class="content">
+                        <div class="ornament">❀ ❀ ❀</div>
+                        <h1>Pria & Wanita</h1>
+
+                        <div class="section the-wedding-of">
+                            <div class="section-title">The Wedding Of</div>
+                            <div class="details">
+                                <p>Minggu, 01 Januari 2025</p>
+                                <p>Pukul 08.00 WIB</p>
+                            </div>
+                        </div>
+
+                        <!-- Container baru untuk informasi -->
+                        <div class="section wedding-info">
+                            <div class="bismillah">
+                                <h3 class="arabic-text">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْم</h3>
+                            </div>
+
+                            <div class="wedding-greeting">
+                                <p>Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+                                <p>Dengan memohon Rahmat dan Ridho Allah SWT,</p>
+                                <p>kami bermaksud menyelenggarakan acara pernikahan</p>
+                            </div>
+
+                            <div class="couple-info">
+                                <div class="groom-info">
+                                    <div class="couple-photo">
+                                        <img src="Assets Gambar/Pengantin pria.jpg" alt="Foto Pria">
+                                        <div class="photo-overlay"></div>
+                                    </div>
+                                    <h3>Pria</h3>
+                                    <p class="couple-parents">Putra Pertama dari</p>
+                                    <p class="parent-names">Bapak ... & Ibu ...</p>
+                                </div>
+
+                                <div class="couple-divider">
+                                    <span>&</span>
+                                </div>
+
+                                <div class="bride-info">
+                                    <div class="couple-photo">
+                                        <img src="Assets Gambar/Pengantin wanita.jpg" alt="Foto Wanita" z>
+                                        <div class="photo-overlay"></div>
+                                    </div>
+                                    <h3>Wanita</h3>
+                                    <p class="couple-parents">Putri Kedua dari</p>
+                                    <p class="parent-names">Bapak ... & Ibu ...</p>
+                                    <div class="social-media">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ornament karangan-bunga">❀ ❀ ❀</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="info" class="info">
+        <div class="countdown-container">
+            <h3 class="countdown-title">Menuju Hari Bahagia</h3>
+            
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Hari</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Jam</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Menit</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Detik</div>
+                </div>
+            </div>
+
+            <div class="calendar-section">
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE
+&text=Pernikahan+Pria+dan+Wanita
+&dates=20250101T080000/20250101T170000
+&details=Akad+Nikah:+08:00+-+10:00+WIB%0A%0AResepsi:+11:00+-+17:00+WIB%0A%0AAlamat+Akad+Nikah:+Masjid+Nabawi,+Jl.+Cinta+Abadi+No.+123%0A%0AAlamat+Resepsi:+Mekkah+Arab+Saudi,+Jl.+Cinta+Sejati+No.+456
+&location=Mekkah+Arab+Saudi" 
+                    class="add-to-calendar" 
+                    id="addToCalendar"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <i class="far fa-calendar-plus"></i>
+                    Simpan ke Google Calendar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akad Nikah -->
+<section id="maps" class="maps">
+    <div class="events-wrapper">
+        <section class="event-section">
+            <div class="event-card">
+                <h2 class="event-title">Akad Nikah</h2>
+                <div class="event-ornament"></div>
+                <p class="event-subtitle">❝ Dengan rahmat Allah SWT ❞</p>
+                <div class="event-details">
+                    <div class="event-info">
+                        <i class="fas fa-calendar-alt event-icon"></i>
+                        <div class="event-text">
+                            Minggu, <span class="event-highlight">1 Januari 2025</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <i class="fas fa-clock event-icon"></i>
+                        <div class="event-text">
+                            Pukul <span class="event-highlight">08:00 - 10:00 WIB</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <i class="fas fa-map-marker-alt event-icon"></i>
+                        <div class="event-text">
+                            <span class="event-highlight">Masjid Nabawi</span><br>
+                            Jl. Cinta Abadi No. 123
+                        </div>
+                    </div>
+                </div>
+                <div class="maps-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.0471617491007!2d39.60513547535755!3d24.468165378279597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdbe5197d220d5%3A0x77b11dd09a96b147!2sMasjid%20Nabawi!5e0!3m2!1sid!2sid!4v1709799171317!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <a href="https://maps.app.goo.gl/4MjQh5Vgu4d5yoA49" 
+                   class="direction-btn" 
+                   target="_blank">
+                    <i class="fas fa-directions"></i>
+                    Petunjuk Arah
+                </a>
+            </div>
+    </div>
+
+    <!-- Resepsi -->
+        <div class="events-wrapper">    
+            <div class="event-card">
+                <h2 class="event-title">Resepsi Pernikahan</h2>
+                <div class="event-ornament"></div>
+                <p class="event-subtitle">❝ Berbagi Kebahagiaan Bersama ❞</p>
+                <div class="event-details">
+                    <div class="event-info">
+                        <i class="fas fa-calendar-alt event-icon"></i>
+                        <div class="event-text">
+                            Minggu, <span class="event-highlight">1 Januari 2025</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <i class="fas fa-clock event-icon"></i>
+                        <div class="event-text">
+                            Pukul <span class="event-highlight">11:00 - 17:00 WIB</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <i class="fas fa-map-marker-alt event-icon"></i>
+                        <div class="event-text">
+                            <span class="event-highlight">Mekkah Arab Saudi</span><br>
+                            Jl. Cinta Sejati No. 456
+                        </div>
+                    </div>
+                </div>
+                <div class="maps-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237684.5851761668!2d39.68172738136862!3d21.43625437584091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2sMekkah%20Arab%20Saudi!5e0!3m2!1sid!2sid!4v1736353912142!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <a href="https://maps.app.goo.gl/pvfcjEth4JF8Uv7D8" class="direction-btn" target="_blank">
+                    <i class="fas fa-directions"></i>
+                    Petunjuk Arah
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Tambahkan section galeri setelah event section -->
+    <section id="galeri" class="galeri">
+        <h2 class="gallery-title">Galeri Foto Kami</h2>
+        
+        <!-- Quote dengan animasi -->
+        <p class="gallery-quote">❝ Setiap foto menceritakan kisah cinta kami yang penuh makna,
+            setiap momen adalah kenangan indah yang akan selalu kami jaga selamanya ❞</p>
+        
+        <!-- Grid 6 foto -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="Assets Gambar/Galeri1.jpg" alt="Galeri 3">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets Gambar/Galeri2.jpg" alt="Galeri 6">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets Gambar/Galeri3.jpg" alt="Galeri 1">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets Gambar/Galeri4.jpg" alt="Galeri 3">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets Gambar/Galeri5.jpg" alt="Galeri 6">
+            </div>
+            <div class="gallery-item">
+                <img src="Assets Gambar/Galeri6.jpg" alt="Galeri 1">
+            </div>
+        </div>
+
+        <!-- Horizontal Slideshow -->
+        <div class="horizontal-slideshow">
+            <div class="slide-track">
+                <!-- Set foto pertama -->
+                <div class="slide-item">
+                    <img src="Assets Gambar/Galeri1.jpg" alt="Slide 1">
+                </div>
+                <div class="slide-item">
+                    <img src="Assets Gambar/Galeri2.jpg" alt="Slide 2">
+                </div>
+                <div class="slide-item">
+                    <img src="Assets Gambar/Galeri1.jpg" alt="Slide 3">
+                </div>
+                <div class="slide-item">
+                    <img src="Assets Gambar/Galeri3.jpg" alt="Slide 4">
+                </div>
+                
+                <!-- Duplikat set untuk infinite loop -->
+                <div class="slide-item">
+                    <img src="Assets Gambar/Galeri3.jpg" alt="Slide 1">
+                </div>
+                <div class="slide-item">
+                    <img src="Assets Gambar/Galeri6.jpg" alt="Slide 2">
+                </div>
+                <div class="slide-item">
+                    <img src="Assets Gambar/Galeri1.jpg" alt="Slide 3">
+                </div>
+                <div class="slide-item">
+                    <img src="Assets Gambar/Galeri3.jpg" alt="Slide 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="RSVP" class="RSVP">
+        <h2 class="rsvp-title">Reservasi Kehadiran</h2>
+        <p class="rsvp-subtitle">Kami berharap anda dapat hadir di hari bahagia kami</p>
+        
+        <form id="rsvpForm" class="rsvp-form"
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbxfwJCT4n4IMYRMt0CVdXc5OkIzEG_4SAs0qqdx-knojmnkKZ8gP1ivCD3vhudpz1MQ/exec"
+        id="my-form">
+            <div class="form-group">
+                <input type="text" id="nama" name="nama" required placeholder="Nama Lengkap">
+            </div>
+            <div class="form-group">
+                <select id="kehadiran" name="kehadiran" required>
+                    <option value="">Konfirmasi Kehadiran</option>
+                    <option value="Hadir">Ya, Saya Akan Hadir</option>
+                    <option value="Tidak Hadir">Maaf, Saya Tidak Bisa Hadir</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="number" id="jumlah_tamu" name="jumlah_tamu" min="1" max="5" placeholder="Jumlah Tamu (max. 5 orang)" required>
+            </div>
+            <button type="submit" class="submit-btn">Kirim</button>
+        </form>
+    </section>
+
+        <div id="disqus_thread" class="disqus-container"></div>
+    <!-- Update Disqus integration -->
+    <div id="disqus_thread" class="disqus-container"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;  // URL halaman saat ini
+            this.page.identifier = 'pria-dan-wanita-wedding'; // Identifier unik untuk halaman ini
+        };
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://pria-dan-wanita-wedding.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+    <noscript>
+        Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+
+</section>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <script>
+        function showNotification(message) {
+            // Buat overlay
+            const overlay = document.createElement('div');
+            overlay.className = 'notification-overlay';
+            
+            // Buat notifikasi
+            const notification = document.createElement('div');
+            notification.className = 'notification success';
+            notification.innerHTML = `
+                <div class="notification-content">
+                    ${message}
+                </div>
+            `;
+            
+            // Tambahkan ke DOM
+            overlay.appendChild(notification);
+            document.body.appendChild(overlay);
+            
+            // Tampilkan dengan animasi
+            setTimeout(() => {
+                overlay.classList.add('show');
+                notification.classList.add('show');
+            }, 100);
+            
+            // Hilangkan setelah 3 detik
+            setTimeout(() => {
+                overlay.classList.remove('show');
+                notification.classList.remove('show');
+                setTimeout(() => overlay.remove(), 300);
+            }, 3000);
+        }
+
+        // Event listener form
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById('rsvpForm');
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                .then(() => {
+                    showNotification('✨ Terima kasih atas konfirmasi kehadiran Anda! Kami sangat menantikan kehadiran Anda di hari bahagia kami ✨');
+                    form.reset();
+                })
+                .catch(error => {
+                    showNotification('🙏 Mohon maaf, terjadi kesalahan. Silakan coba beberapa saat lagi');
+                });
+            });
+        });
+    </script>
+
+    <script>
+    // Fungsi untuk mengontrol musik
+    function playBackgroundMusic() {
+        const music = document.getElementById('background-music');
+        const musicToggle = document.getElementById('music-toggle');
+        
+        // Tampilkan tombol musik
+        musicToggle.style.display = 'block';
+        
+        // Coba putar musik
+        music.volume = 0.5; // Set volume ke 50%
+        const playPromise = music.play();
+        
+        if (playPromise !== undefined) {
+            playPromise
+                .then(() => {
+                    // Musik berhasil diputar
+                    musicToggle.classList.add('playing');
+                    console.log('Music started playing');
+                })
+                .catch(error => {
+                    // Jika ada error, tampilkan tombol dalam keadaan pause
+                    console.log('Playback failed:', error);
+                    musicToggle.classList.add('paused');
+                });
+        }
+    }
+
+    // Event listener saat dokumen dimuat
+    document.addEventListener('DOMContentLoaded', function() {
+        const music = document.getElementById('background-music');
+        const musicToggle = document.getElementById('music-toggle');
+        
+        // Sembunyikan tombol musik awalnya
+        musicToggle.style.display = 'none';
+        
+        // Toggle musik saat tombol diklik
+        musicToggle.addEventListener('click', function() {
+            if (music.paused) {
+                const playPromise = music.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        musicToggle.classList.remove('paused');
+                        musicToggle.classList.add('playing');
+                    });
+                }
+            } else {
+                music.pause();
+                musicToggle.classList.remove('playing');
+                musicToggle.classList.add('paused');
+            }
+        });
+    });
+    </script>
+
+<!-- Footer Section -->
+<footer class="wedding-footer">
+    <div class="footer-content">
+        <!-- Ornamen Atas -->
+        <div class="footer-ornament">❦</div>
+        
+        <!-- Quotes Pernikahan -->
+        <div class="footer-quote">
+            <p>"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang"</p>
+            <span class="quote-source">QS. Ar-Rum: 21</span>
+        </div>
+        
+        <!-- Nama Pasangan -->
+        <div class="couple-names">
+            <h2>Pria & Wanita</h2>
+            <p class="wedding-date">01.01.2025</p>
+        </div>
+        
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/yusufagung07/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yusuf-agung-a1b611333/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/YusufAgungPurwadi?tab=repositories" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        
+        <!-- Signature -->
+        <div class="footer-signature">
+            <p>Made with ❤️ by</p>
+            <p class="designer-name">Yusuf Agung Purwadi</p>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+</html> 
+
+    
